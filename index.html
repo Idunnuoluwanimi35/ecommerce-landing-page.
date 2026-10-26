@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#08a9d8">
+    <meta name="description" content="Shop electronics, home goods, and daily essentials at MegaMart.">
+    <title>MegaMart | Everyday shopping, made easy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+
+                                 <!-- HEADER -->
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+        <div class="header-main page-shell">
+            <a class="brand" href="#top" aria-label="MegaMart home">
+                <span class="brand-mark" aria-hidden="true">M</span>
+                <span>Mega<span>Mart</span></span>
+            </a>
+
+            <form class="search-form" role="search" id="product-search-form">
+                <label class="visually-hidden" for="product-search">Search products</label>
+                <input id="product-search" name="q" type="search"
+                    placeholder="Search essentials, electronics and more..." autocomplete="off">
+                <button class="search-button" type="submit" aria-label="Search products">
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                        <circle cx="10.8" cy="10.8" r="6.8"></circle>
+                        <path d="m16 16 5 5"></path>
+                    </svg>
+                </button>
+            </form>
+
+            <div class="header-actions">
+                <a class="header-action account-action" href="#footer-links">
+                    <span class="action-icon" aria-hidden="true">
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path d="M20 21a8 8 0 0 0-16 0"></path>
+                            <circle cx="12" cy="8" r="4"></circle>
+                        </svg>
+                    </span>
+                    <span>Sign in/Sign up</span>
+                </a>
+                <button class="header-action cart-trigger" id="cart-trigger" type="button" aria-haspopup="dialog"
+                    aria-controls="cart-dialog">
+                    <span class="cart-icon-wrap" aria-hidden="true">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h8.5a2 2 0 0 0 1.9-1.4L21 8H6"></path>
+                            <circle cx="9" cy="20" r="1"></circle>
+                            <circle cx="18" cy="20" r="1"></circle>
+                        </svg>
+                        <span class="cart-count" id="cart-count">0</span>
+                    </span>
+                    <span>Cart</span>
+                </button>
+            </div>
+        </div>
+
+        <nav class="primary-nav" aria-label="Main navigation">
+            <div class="page-shell nav-inner">
+                <a class="category-menu" href="#categories">
+                    <span class="menu-glyph" aria-hidden="true">
+                        <svg class="icon-svg" viewBox="0 0 24 24">
+                            <path d="M4 7h16M4 12h16M4 17h16"></path>
+                        </svg>
+                    </span>
+                    All categories
+                </a>
+                <div class="nav-links">
+                    <a href="#smartphones">Electronics</a>
+                    <a href="#categories">Home &amp; Kitchen</a>
+                    <a href="#essentials">Grocery</a>
+                    <a href="#brands">Top deals</a>
+                </div>
+                <a class="delivery-link" href="#footer-links">
+                    <span aria-hidden="true"><svg class="icon-svg" viewBox="0 0 24 24">
+                            <path d="M12 21s6-5.6 6-11a6 6 0 1 0-12 0c0 5.4 6 11 6 11Z"></path>
+                            <circle cx="12" cy="10" r="2.5"></circle>
+                        </svg></span>
+                    Deliver to <strong>Your location</strong>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+                                       <!-- SLIDE PANEL -->
+    <main id="main-content" class="page-shell" tabindex="-1">
+        <section class="hero" id="top" aria-label="Featured promotions" aria-roledescription="carousel">
+            <div class="hero-copy">
+                <p class="eyebrow" id="hero-eyebrow">Best deal online on smart watches</p>
+                <h1><span id="hero-title-first">SMART</span><span id="hero-title-second">WEARABLE.</span></h1>
+                <p class="hero-offer">UP TO <strong id="hero-discount">80% OFF</strong></p>
+                <a class="button button-light" href="#smartphones">Shop now <span aria-hidden="true">→</span></a>
+                <div class="hero-controls">
+                    <div class="hero-dots" role="group" aria-label="Choose a promotion">
+                        <button class="is-active" type="button" aria-label="Show smartwatch promotion"
+                            aria-current="true"></button>
+                        <button type="button" aria-label="Show headphone promotion"></button>
+                        <button type="button" aria-label="Show smartphone promotion"></button>
+                    </div>
+                    <button class="hero-pause" type="button" aria-label="Pause slideshow" title="Pause slideshow">
+                        <svg viewBox="0 0 16 16" aria-hidden="true">
+                            <path d="M5 3v10M11 3v10"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="hero-art media-frame media-hero">
+                <img src="images/smart-watch-hero.webp.png" alt="Featured smartwatch promotion"
+                    data-placeholder="Hero image">
+            </div>
+            <button class="hero-arrow hero-arrow-prev" type="button" aria-label="Previous promotion">‹</button>
+            <button class="hero-arrow hero-arrow-next" type="button" aria-label="Next promotion">›</button>
+                </button>
+            </div>
+        </section>
+
+                                                            <!-- SMARTPHONES SECTION -->
+
+        <section class="catalog-section" id="smartphones" aria-labelledby="smartphones-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">Fresh finds, great prices</p>
+                    <h2 id="smartphones-title">Grab the best deal on <span>smartphones</span></h2>
+                </div>
+                <a class="view-all" href="#smartphones">View all <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="product-grid" id="featured-products">
+                <article class="product-card" data-product-card data-search="samsung galaxy m14 smartphone">
+                    <div class="product-media media-frame">
+                        <span class="discount-badge">-40%</span>
+                        <img src="images/galaxy-m13.webp.png" alt="Samsung Galaxy M14 smartphone"
+                            data-placeholder="Product image">
+                        <button class="favorite-button" type="button"
+                            aria-label="Save Samsung Galaxy M14 to favourites">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Samsung</p>
+                        <h3>Galaxy M14 5G</h3>
+                        <div class="product-price"><strong>14,999</strong><del>24,999</del></div>
+                        <button class="add-button" type="button" data-add-to-cart data-id="galaxy-m14"
+                            data-name="Galaxy M14 5G" data-price="14999">Add to cart <span
+                                aria-hidden="true">+</span></button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-product-card data-search="apple iphone 13 smartphone">
+                    <div class="product-media media-frame">
+                        <span class="discount-badge">-25%</span>
+                        <img src="images/phone image 1.png" alt="Apple iPhone 13" data-placeholder="Product image">
+                        <button class="favorite-button" type="button"
+                            aria-label="Save iPhone 13 to favourites">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Apple</p>
+                        <h3>iPhone 13</h3>
+                        <div class="product-price"><strong>49,999</strong><del>66,999</del></div>
+                        <button class="add-button" type="button" data-add-to-cart data-id="iphone-13"
+                            data-name="iPhone 13" data-price="49999">Add to cart <span
+                                aria-hidden="true">+</span></button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-product-card data-search="xiaomi redmi note 12 smartphone">
+                    <div class="product-media media-frame">
+                        <span class="discount-badge">-30%</span>
+                        <img src="images/phone image 3.png" alt="Xiaomi Redmi Note 12" data-placeholder="Product image">
+                        <button class="favorite-button" type="button"
+                            aria-label="Save Redmi Note 12 to favourites">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Xiaomi</p>
+                        <h3>Redmi Note 12</h3>
+                        <div class="product-price"><strong>18,499</strong><del>26,499</del></div>
+                        <button class="add-button" type="button" data-add-to-cart data-id="redmi-note-12"
+                            data-name="Redmi Note 12" data-price="18499">Add to cart <span
+                                aria-hidden="true">+</span></button>
+                    </div>
+                </article>
+
+                <article class="product-card" data-product-card data-search="realme narzo 60 smartphone">
+                    <div class="product-media media-frame">
+                        <span class="discount-badge">-20%</span>
+                        <img src="images/galaxy-m33.webp.png" alt="Realme Narzo 60" data-placeholder="Product image">
+                        <button class="favorite-button" type="button"
+                            aria-label="Save Realme Narzo 60 to favourites">♡</button>
+                    </div>
+                    <div class="product-info">
+                        <p class="product-category">Realme</p>
+                        <h3>Narzo 60 5G</h3>
+                        <div class="product-price"><strong>21,999</strong><del>27,499</del></div>
+                        <button class="add-button" type="button" data-add-to-cart data-id="realme-narzo-60"
+                            data-name="Narzo 60 5G" data-price="21999">Add to cart <span
+                                aria-hidden="true">+</span></button>
+                    </div>
+                </article>
+            </div>
+            <p class="search-empty" id="search-empty" hidden>No products match your search. Try another term.</p>
+        </section>
+
+                                        <!-- CATEGORIES SECTION -->
+
+        <section class="catalog-section category-section" id="categories" aria-labelledby="categories-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">A little bit of everything</p>
+                    <h2 id="categories-title">Shop by <span>Categories</span></h2>
+                </div>
+                <a class="view-all" href="#categories">View all <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="category-grid">
+                <a class="category-item" href="#smartphones"><span class="category-image media-frame"><img
+                            src="images/mobile.png" alt=""
+                            data-placeholder="Category image"></span><span>Electronics</span></a>
+                <a class="category-item" href="#essentials"><span class="category-image media-frame"><img
+                            src="images/fruits.png" alt=""
+                            data-placeholder="Category image"></span><span>Grocery</span></a>
+                <a class="category-item" href="#categories"><span class="category-image media-frame"><img
+                            src="images/accessories.png" alt=""
+                            data-placeholder="Category image"></span><span>Fashion</span></a>
+                <a class="category-item" href="#categories"><span class="category-image media-frame"><img
+                            src="images/decor.png" alt="" data-placeholder="Category image"></span><span>Home &amp;
+                        Kitchen</span></a>
+                <a class="category-item" href="#smartphones"><span class="category-image media-frame"><img
+                            src="images/watches.png" alt="" data-placeholder="Category image"></span><span>Smart
+                        Watches</span></a>
+                <a class="category-item" href="#categories"><span class="category-image media-frame"><img
+                            src="images/cosmetics.png" alt=""
+                            data-placeholder="Category image"></span><span>Beauty</span></a>
+                <a class="category-item" href="#categories"><span class="category-image media-frame"><img
+                            src="images/furniture.png" alt=""
+                            data-placeholder="Category image"></span><span>Furniture</span></a>
+            </div>
+        </section>
+
+                                              <!-- ELECTRONICS BRANDS SECTION -->
+
+        <section class="catalog-section brands-section" id="brands" aria-labelledby="brands-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">Brands worth a look</p>
+                    <h2 id="brands-title">Top Electronics <span>Brands</span></h2>
+                </div>
+                <a class="view-all" href="#brands">View all <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="brand-grid">
+                <a class="brand-tile brand-tile-dark" href="#smartphones">
+                    <span class="brand-tile-copy"><small>UP TO 80% OFF</small><strong>Apple</strong></span>
+                    <span class="brand-art media-frame"><img src="images/phone image 1.png"
+                            alt="Apple devices promotion" data-placeholder="Brand image"></span>
+                </a>
+                <a class="brand-tile brand-tile-yellow" href="#smartphones">
+                    <span class="brand-tile-copy"><small>UP TO 50% OFF</small><strong>realme</strong></span>
+                    <span class="brand-art media-frame"><img src="images/galaxy-m33.webp.png"
+                            alt="Realme devices promotion" data-placeholder="Brand image"></span>
+                </a>
+                <a class="brand-tile brand-tile-peach" href="#smartphones">
+                    <span class="brand-tile-copy"><small>UP TO 60% OFF</small><strong>Xiaomi</strong></span>
+                    <span class="brand-art media-frame"><img src="images/phone image 3.png"
+                            alt="Xiaomi devices promotion" data-placeholder="Brand image"></span>
+                </a>
+                <a class="brand-tile brand-tile-blue" href="#smartphones">
+                    <span class="brand-tile-copy"><small>UP TO 40% OFF</small><strong>Samsung</strong></span>
+                    <span class="brand-art media-frame"><img src="images/galaxy-s22-green.webp.png"
+                            alt="Samsung devices promotion" data-placeholder="Brand image"></span>
+                </a>
+            </div>
+            <div class="carousel-dots" aria-hidden="true"><span class="is-active"></span><span></span><span></span>
+            </div>
+        </section>
+
+                                       <!-- DAILY ESSENTIALS SECTION -->
+
+        <section class="catalog-section essentials-section" id="essentials" aria-labelledby="essentials-title">
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">Good things for every day</p>
+                    <h2 id="essentials-title">Daily <span>Essentials</span></h2>
+                </div>
+                <a class="view-all" href="#essentials">View all <span aria-hidden="true">→</span></a>
+            </div>
+            <div class="essentials-grid">
+                <a class="essential-item" href="#essentials"><span class="essential-media media-frame"><img
+                            src="images/daily essentials.png" alt="Fresh apples"
+                            data-placeholder="Product image"></span><strong>Fresh apples</strong><small>UP TO 30%
+                        OFF</small></a>
+                <a class="essential-item" href="#essentials"><span class="essential-media media-frame"><img
+                            src="images/fruits.png" alt="Ripe bananas"
+                            data-placeholder="Product image"></span><strong>Ripe bananas</strong><small>UP TO 20%
+                        OFF</small></a>
+                <a class="essential-item" href="#essentials"><span class="essential-media media-frame"><img
+                            src="images/vegetables.png" alt="Mixed vegetables"
+                            data-placeholder="Product image"></span><strong>Mixed vegetables</strong><small>UP TO 25%
+                        OFF</small></a>
+                <a class="essential-item" href="#essentials"><span class="essential-media media-frame"><img
+                            src="images/strawberry.png" alt="Fresh strawberries"
+                            data-placeholder="Product image"></span><strong>Fresh strawberries</strong><small>UP TO 15%
+                        OFF</small></a>
+                <a class="essential-item" href="#essentials"><span class="essential-media media-frame"><img
+                            src="images/mango.png" alt="Ripe mangoes"
+                            data-placeholder="Product image"></span><strong>Ripe mangoes</strong><small>UP TO 20%
+                        OFF</small></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" id="footer-links">
+        <div class="page-shell footer-grid">
+            <div class="footer-brand-column">
+                <a class="brand brand-footer" href="#top"><span class="brand-mark"
+                        aria-hidden="true">M</span><span>Mega<span>Mart</span></span></a>
+                <h2>Contact us</h2>
+                <a href="mailto:hello@megamart.example">hello@megamart.example</a>
+                <a href="tel:+10000000000">+1 (000) 000-0000</a>
+                <h2 class="download-heading">Download app</h2>
+                <div class="store-links">
+                    <a href="#footer-links" class="store-link">
+                        <svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M15.1 12.7c0 2.1 1.9 2.8 2 2.9-.2.5-.4.9-.7 1.3-.5.8-.9 1.4-1.6 1.4-.7 0-1.2-.4-2.3-.4-1.1 0-1.5.4-2.3.4-.7 0-1.3-.7-1.8-1.5-.9-1.3-1.6-3.7-1.6-5.9 0-1.8.9-3.5 2.2-4.4.7-.5 1.5-.8 2.3-.8.8 0 1.5.4 2.2.4.7 0 1.6-.4 2.6-.4.5 0 1.9.2 2.8 1.6-.1.1-1.7 1-1.7 3.1Zm-2.4-7.5c.4-.5.8-1.1.8-1.8-.8.1-1.7.5-2.3 1.2-.4.4-.8 1.1-.7 1.8.8.1 1.7-.4 2.2-1.2Z">
+                            </path>
+                        </svg>
+                        <span><small>Download on the</small><strong>App Store</strong></span>
+                    </a>
+                    <a href="#footer-links" class="store-link">
+                        <svg class="store-icon" viewBox="0 0 24 24" aria-hidden="true">
+                            <path
+                                d="M3.5 2.6 13.8 12l-10.3 9.4A1.8 1.8 0 0 1 3.5 20V4a1.8 1.8 0 0 1 0-1.4Zm12.6 10.3 2.6-2.3c.8-.7.8-1.9 0-2.6l-2.6-2.3-3.2 3.2 3.2 4.1Zm-3.2 3.2L3.5 21.4c.3.2.6.3 1 .3h8.5l5.4-4.9-3.2-3.2Zm5.9-8.8-2.8 2.5 3.3 3.3 2.8-2.5c.8-.7.8-1.9 0-2.6l-3.3-3.2Z">
+                            </path>
+                        </svg>
+                        <span><small>GET IT ON</small><strong>Google Play</strong></span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-link-group">
+                <h2>Most Popular Categories</h2>
+                <a href="#smartphones">Staples</a><a href="#smartphones">Beverages</a><a href="#smartphones">Personal
+                    Care</a><a href="#smartphones">Home Care</a><a href="#smartphones">Baby Care</a><a
+                    href="#smartphones">Vegetables &amp; Fruits</a>
+            </div>
+            <div class="footer-link-group">
+                <h2>Customer Services</h2>
+                <a href="#footer-links">About Us</a><a href="#footer-links">Terms &amp; Conditions</a><a
+                    href="#footer-links">FAQ</a><a href="#footer-links">Privacy Policy</a><a
+                    href="#footer-links">E-waste Policy</a><a href="#footer-links">Cancellation &amp; Return Policy</a>
+            </div>
+        </div>
+        <div class="footer-bottom page-shell"><span>© 2025 MegaMart. All rights reserved.</span><span>Designed for
+                everyday shopping.</span></div>
+    </footer>
+
+    <dialog class="cart-dialog" id="cart-dialog" aria-labelledby="cart-title">
+        <div class="cart-dialog-header">
+            <h2 id="cart-title">Your cart</h2><button class="dialog-close" id="cart-close" type="button"
+                aria-label="Close cart">×</button>
+        </div>
+        <div class="cart-lines" id="cart-lines"></div>
+        <div class="cart-empty" id="cart-empty">Your cart is empty. Find something you'll love.</div>
+        <div class="cart-dialog-footer" id="cart-footer">
+            <div><span>Subtotal</span><strong id="cart-subtotal">0</strong></div>
+            <div class="cart-footer-actions">
+                <button class="button button-primary" id="checkout-button" type="button">Proceed to checkout <span
+                        aria-hidden="true">→</span></button>
+                <button class="button button-secondary" id="clear-cart" type="button">Clear cart</button>
+            </div>
+        </div>
+        <p class="cart-note">Demo checkout only. No order is submitted and no payment is taken.</p>
+    </dialog>
+</body>
+
+</html>
